@@ -3,7 +3,8 @@ import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+  // debugger;
   return (
     <div>
       My posts
@@ -13,8 +14,8 @@ const MyPosts = () => {
 
       </div>
       <div className={classes.posts}>
-        <Post />
-        <Post />
+        <Post message='Hi, how are you?'/>
+        <Post message="It's my fitst post"/>
       </div>
     </div>
   );
